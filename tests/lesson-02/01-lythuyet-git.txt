@@ -1,0 +1,9 @@
+git init - tạo ra vùng Working Directory và các file từ vùng Local sẽ được chuyển vào đây;
+(Lưu ý: 1 folder trên máy local phải được add trên VS Code trước để các file được tạo sẽ lưu ở đây và các file vẫn ở vùng Local);
+
+git add <file_name> - add 1 file cụ thể lấy theo tên trong cú pháp từ vùng Working Directory, file được lấy sẽ chuyển qua vùng Staging;
+
+git add . - add tất cả file đang tồn tại ở vùng Working Directory vào Staging (Lưu ý: những file đã được add từ trước sẽ không được add nữa);
+
+git commit -m"message" -  tạo phiên bản dựa trên tên được viết trong message, các file ở Staging sẽ được chuyển qua vùng Repository trước khi được push lên GitHub;
+(Lưu ý: phần message nên được viết cùng commit convention theo Git: chore; feat; fix và convention sẽ được viết trước message. Ví dụ: git commit -m"feat: bai tap buoi 2");

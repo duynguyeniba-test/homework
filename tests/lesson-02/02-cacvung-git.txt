@@ -1,0 +1,11 @@
+a. Tạo 3 file: file1, file2, file3 > Local
+
+b. Chạy lệnh: git init > file1; file2; file3 move qua Working Directory
+
+c. Chạy lệnh: git commit -m”init project” > Error, chưa có file được add vào Staging để commit và chuyển qua Repository
+
+d. Chạy lệnh: git add file1 > file1 move qua Staging
+
+e. Chạy lệnh: git commit -m”add file1” > file1 chuyển qua vùng Repository, sẵn sàng push lên GitHub
+
+f. Chạy lệnh: git commit -m”add file” > Error, chưa có file được add vào Staging để commit và chuyển qua Repository
