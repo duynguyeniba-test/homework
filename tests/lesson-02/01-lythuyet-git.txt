@@ -1,4 +1,4 @@
-git init - tạo ra vùng Working Directory và các file từ vùng Local sẽ được chuyển vào đây;
+git init - tạo ra local repository và các file từ vùng Local sẽ được chuyển vào vùng Working Directory;
 (Lưu ý: 1 folder trên máy local phải được add trên VS Code trước để các file được tạo sẽ lưu ở đây và các file vẫn ở vùng Local);
 
 git add <file_name> - add 1 file cụ thể lấy theo tên trong cú pháp từ vùng Working Directory, file được lấy sẽ chuyển qua vùng Staging;
