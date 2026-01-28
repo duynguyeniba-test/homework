@@ -36,7 +36,9 @@
             - Xoá branch: git branch -D <tên nhánh> (Phải đứng ở nhánh khách trước khi xóa)
 
         **Lưu ý chung: luôn pull code về trước khi tạo nhánh mới**
-    3. Ignore file:
+
+    3. Ignore file
+
 # Javascript
 ## Convention
     - Convention giúp dòng code được viết theo format chung, dễ đọc code.
@@ -45,3 +47,47 @@
         - kebab-case: các chữ viết thường, cách nhau bởi dấu gạch ngang (đặt tên file và folder)
         - camelCase: chữ đầu viết thường, các chữ sau viết hoa chữ cái đầu tiên (đặt tên biến, hàm)
         - PascalCase: tất cả các chữ cái đều viết hoa (đặt tên class)
+## Console.log nâng cao
+    1. Trích một thuộc tính có trong biến:
+        let name = “Nga”;
+        console.log(`Toi la ${name}`);
+
+        OR
+
+        console.log(“Toi ten la” + name + “”);
+        1.1. Trích nhiều thuộc tính và dùng console.log để tính dien tích:
+
+        const dai = 5;
+        const rong = 10;
+        const dienTich = dai * rong;
+        console.log(`Dien tich hinh chu nhat (${dai}x${rong}) = ${dienTich}`);
+
+    2. Object Object là một trong những kiểu dữ liệu quan trọng nhất trong JavaScript, dùng để lưu trữ dữ liệu dạng key-value.
+        const product = {
+            "name": "Laptop",
+            'manufacturer': {
+                "myName": "Acer",
+                year: 2024
+            }
+        };
+        console.log(product.name);
+        console.log(product.manufacturer);
+        console.log(product.manufacturer ["myName"]);
+        
+    3. Array - Mảng:
+        - Độ dài mảng tính theo số thứ tự với số đầu tính là 1.
+        - Lấy phần tử theo index với thứ tự số đầu tính là 0.
+    
+    const arr = [3, 7, 9, 21,54];
+    console.log(arr[3]);
+    console.log(arr.length);
+
+    4. Function:
+
+    function tinhDienTich(dai, rong) {
+    const dienTich = dai * rong;
+    // console.log(`Dien tich hinh chu nhat (${dai}x${rong}) =${dienTich}`);
+    return dienTich;
+}
+    console.log(tinhDienTich(5, 10));
+    console.log(tinhDienTich(20, 5));
